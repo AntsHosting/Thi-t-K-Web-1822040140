@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise on LIST, TABLE, FORM</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            color: #040202;
+            background-color: #f2d1d1;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            background-color: #e11111;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            padding: 0 10px;
+        }
+
+        ul {
+            padding: 0 20px;
+        }
+
+        table {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #c71414;
+        }
+
+        tr:nth-child(even) {
+            background-color: #9d6f6f;
+        }
+
+        tr:hover {
+            background-color: #981f1f;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Free Movie Screenings</h1>
+    <p>We will be organizing several free movie screenings for the community.</p>
+    <p>Please note that the following events are free for everyone to attend:</p>
+    <ul>
+        <li>The Avengers</li>
+        <li>La La Land</li>
+        <li>Interstellar</li>
+        <li>Parasite</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>First Screening</th>
+            <th>Second Screening</th>
+            <th>Third Screening</th>
+        <tr>
+            <th>The Avengers</th>
+            <td>Saturday, February 4, 2025<br />11 AM - 2 PM</td>
+            <td>Saturday, March 3, 2025<br />11 AM - 2 PM</td>
+            <td>Saturday, March 17, 2025<br />11 AM - 2 PM</td>
+        </tr>
+        <tr class="even">
+            <th>La La Land</th>
+            <td>Saturday, April 7, 2025<br />11 AM - 1 PM</td>
+            <td>Saturday, May 5, 2025<br />11 AM - 1 PM</td>
+            <td>Saturday, May 19, 2025<br />11 AM - 1 PM</td>
+        </tr>
+        <tr>
+            <th>Interstellar</th>
+            <td>Saturday, June 9, 2025<br />11 AM - 2 PM</td>
+            <td>Saturday, July 7, 2025<br />11 AM - 2 PM</td>
+            <td>Saturday, July 21, 2025<br />11 AM - 2 PM</td>
+        </tr>
+        <tr class="even">
+            <th>Parasite</th>
+            <td>Saturday, August 4, 2025<br />11 AM - 4 PM</td>
+            <td>Saturday, September 8, 2025<br />11 AM - 4 PM</td>
+            <td>Saturday, September 15, 2025<br />11 AM - 4 PM</td>
+        </tr>
+    </table>
+    <form action="http://www.example.com/form.php" method="get">
+        <fieldset>
+            <legend>Register your interest</legend>
+            <p><label class="title" for="name">Your name:</label>
+                <input type="text" name="name" id="name"><br />
+                <label class="title" for="email">Your email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p><label for="location" class="title">Your nearest cinema:</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+            <span class="title">Would you like to receive information from us?</span>
+            <label><input type="radio" name="member" value="yes" /> Yes</label>
+            <label><input type="radio" name="member" value="no" /> No</label></p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Register" /></div>
+    </form>
+</body>
+
+
+
+</html>
